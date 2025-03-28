@@ -4,12 +4,27 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
+const techLogos = {
+  "React.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  "MongoDB": "https://www.svgrepo.com/show/331488/mongodb.svg",
+  "Express.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  "Next.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  "Chakra UI": "https://img.icons8.com/color/512/chakra-ui.png",
+  "MDX": "https://avatars1.githubusercontent.com/u/74457950?s=256&v=4",
+  "Redux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  "HTML": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  "CSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+   "TypeScript": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+};
+
 // Sample project data
 const featuredProjects = [
   {
     id: 1,
     title: "ecommerce_mern_stack",
-    description: "An e-commerce website project of mine, built using ReactJS, NodeJS, and MongoDB, inspired by Hoang Ha Mobile.",
+    description: "An e-commerce website project built using ReactJS, NodeJS, and MongoDB, inspired by Hoang Ha Mobile.",
     technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
     siteUrl: "https://ecommerce-mern-stack-iota.vercel.app/",
     codeUrl: "https://github.com/TranChinh2901/ecommerce_mern_stack",
@@ -17,10 +32,10 @@ const featuredProjects = [
   {
     id: 2,
     title: "e-portfolio",
-    description: "A website to introduce myself, my profession, and my future career direction. Built with Next.js, TypeScript, and Chakra UI.",
-    technologies: ["Next.js", "Chakra UI", "MDX"],
+    description: "A portfolio website built with Next.js, TypeScript, and Chakra UI.",
+    technologies: ["Next.js", "TypeScript","Chakra UI", "MDX"],
     codeUrl: "https://github.com/TranChinh2901/IamChinhs",
-  }
+  },
 ];
 
 export default function Home() {
@@ -130,10 +145,9 @@ export default function Home() {
 
                   {/* Technologies */}
                   <ul className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <li key={tech} className="flex h-8 w-8 items-center justify-center rounded-full bg-muted">
-                        <span className="sr-only">{tech}</span>
-                        <div className="h-4 w-4 rounded-full bg-secondary-foreground/20"></div>
+                  {project.technologies.map((tech) => (
+                      <li key={tech} className="flex items-center">
+                        <img src={techLogos[tech]} alt={tech} className="h-8 w-8 object-contain transition-transform hover:scale-110" />
                       </li>
                     ))}
                   </ul>

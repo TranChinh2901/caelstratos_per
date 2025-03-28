@@ -7,16 +7,35 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.svgrepo.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'chakra-ui.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.icons8.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'ext.same-assets.com',
       },
+    
     ],
   },
   eslint: {
-    // Only run ESLint on local development
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // We're running build in CI, ignore type errors
     ignoreBuildErrors: true,
   },
   experimental: {
