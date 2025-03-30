@@ -35,6 +35,7 @@ const projects = [
     title: "e-portfolio",
     description: "A portfolio website built with Next.js, TypeScript, and Chakra UI.",
     technologies: ["Next.js", "TypeScript","Chakra UI", "MDX"],
+    siteUrl: "https://iam-chinhs.vercel.app/",
     codeUrl: "https://github.com/TranChinh2901/IamChinhs",
   },
   {
@@ -42,6 +43,7 @@ const projects = [
     title: "my-netflix",
     description: "A user-friendly movie streaming website using React.js and Redux.",
     technologies: ["React.js", "Redux"],
+
     codeUrl: "https://github.com/TranChinh2901/my-netflix",
   },
   {

@@ -34,6 +34,7 @@ const featuredProjects = [
     title: "e-portfolio",
     description: "A portfolio website built with Next.js, TypeScript, and Chakra UI.",
     technologies: ["Next.js", "TypeScript","Chakra UI", "MDX"],
+    siteUrl: "https://iam-chinhs.vercel.app/",
     codeUrl: "https://github.com/TranChinh2901/IamChinhs",
   },
 ];
