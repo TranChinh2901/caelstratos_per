@@ -24,17 +24,17 @@ const techLogos = {
 const projects = [
   {
     id: 1,
-    title: "ecommerce_mern_stack",
+    title: "caelstratos_ecommerce",
     description: "An e-commerce website project built using ReactJS, NodeJS, and MongoDB, inspired by Hoang Ha Mobile.",
     technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
     siteUrl: "https://ecommerce-mern-stack-iota.vercel.app/",
-    codeUrl: "https://github.com/TranChinh2901/ecommerce_mern_stack",
+    codeUrl: "https://github.com/TranChinh2901/caelstratos_ecommerce",
   },
   {
     id: 2,
     title: "e-portfolio",
     description: "A portfolio website built with Next.js, TypeScript, and Chakra UI.",
-    technologies: ["Next.js", "TypeScript","Chakra UI", "MDX"],
+    technologies: ["Next.js", "TypeScript", "Chakra UI", "MDX"],
     siteUrl: "https://iam-chinhs.vercel.app/",
     codeUrl: "https://github.com/TranChinh2901/IamChinhs",
   },
